@@ -1,0 +1,36 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com",
+      "phone": "0123456789",
+      "avatar": "https://randomuser.me/api/portraits/women/86.jpg"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com",
+      "phone": "0123456789",
+      "avatar": "https://randomuser.me/api/portraits/women/79.jpg"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "email": "ann@codingthesmartway.com",
+      "phone": "0123456789",
+      "avatar": "https://randomuser.me/api/portraits/men/68.jpg"
+    },
+    {
+      "id": 4,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@codingthesmartway.com",
+      "phone": "0123456789",
+      "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+    }
+  ]
+}
