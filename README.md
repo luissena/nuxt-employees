@@ -1,63 +1,71 @@
-# Nuxt 3 Minimal Starter
+# Project Name: Nuxt Employees
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
 
-## Setup
+This project is a simple Employee Management App developed for educational purposes. It allows you to list employees by consuming data from an API using Nuxt.js 3's `useFetch` hook. Additionally, you can create a new employee through the app.
 
-Make sure to install the dependencies:
+## Prerequisites
+
+Before running this project, you need to have the following software installed on your system:
+
+1. Node.js - [Download and Install Node.js](https://nodejs.org/en/download/)
+2. Nuxt.js 3 - Make sure you have Nuxt.js 3 installed. You can follow the instructions on the [Nuxt.js 3 documentation](https://v3.nuxtjs.org/docs/getting-started/installation) for installation.
+3. JSON Server - We will use JSON Server as a fake REST API to simulate server responses. You can install JSON Server globally using npm:
 
 ```bash
-# npm
+npm install -g json-server
+```
+
+## Installation
+
+Follow these steps to set up the project:
+
+1. Clone the repository:
+
+```bash
+git clone <repository_url>
+cd nuxt-employees
+```
+
+2. Install the project dependencies:
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
 ```
 
-## Development Server
+## Running the Project
 
-Start the development server on `http://localhost:3000`:
+To run the project, you need to start both the JSON Server and the Nuxt.js app:
+
+1. Start the JSON Server to serve the employee data:
 
 ```bash
-# npm
+json-server --watch db.json
+```
+
+2. In a separate terminal, start the Nuxt.js app:
+
+```bash
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
 ```
 
-## Production
+The Nuxt.js app will be running at `http://localhost:3000`.
 
-Build the application for production:
+## How to Use
 
-```bash
-# npm
-npm run build
+Once the project is up and running, you can access the Employee Management App in your web browser at `http://localhost:3000`.
 
-# pnpm
-pnpm run build
+### Listing Employees
 
-# yarn
-yarn build
-```
+The app will automatically fetch the list of employees from the JSON Server using the `useFetch` hook. The employee data will be displayed on the home page.
 
-Locally preview production build:
+### Adding a New Employee
 
-```bash
-# npm
-npm run preview
+To create a new employee, navigate to the "Create Employee" page using the navigation bar or by clicking the appropriate link. You will see a form where you can input the employee's details, such as name, position, and department. After filling out the form, click the "Create Employee" button to add the new employee to the list.
 
-# pnpm
-pnpm run preview
+## Note
 
-# yarn
-yarn preview
-```
+- This project is intended for educational purposes only and uses a fake REST API powered by JSON Server to simulate backend functionality.
+- In a real-world scenario, you would need a proper backend server to handle API requests and store data.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Happy learning and coding! If you have any questions or run into any issues, feel free to ask for help. Enjoy building your Employee Management App with Nuxt.js 3 and the `useFetch` hook!
